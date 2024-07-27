@@ -1,0 +1,22 @@
+/node_modules
+/.vscode
+
+*.log
+personalNote.md
+# misc
+.env
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.production
+
+/dist
+build
+
+/src/__tsoaConfig
+*.log
+
+/__db

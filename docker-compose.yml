@@ -1,0 +1,45 @@
+version: '3.7'
+services:
+  postgres:
+    image : postgis/postgis:15-3.4
+    container_name: postgres
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - type: bind
+        source: ${PATH_TO_STORAGE}
+        target: /var/lib/postgresql/data
+    environment:
+      PGDATA : "/var/lib/postgresql/data"
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "200m"
+    env_file :
+      - .env
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    ports:
+      - "3456:3456"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: './' 
+      target : module-install-stage
+    container_name: backend
+    working_dir : '/usr/app'
+    command : yarn dev
+    volumes :
+      - /usr/app/node_modules
+      - ./:/usr/app
+    env_file :
+      - .env
+
+
+  
+
