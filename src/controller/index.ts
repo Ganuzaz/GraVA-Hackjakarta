@@ -46,11 +46,16 @@ export default {
 		const { restaurant_id } = req.params;
 
 		try {
-			const result = await Food.findAll({
-				where: {
-					restaurant_id: restaurant_id,
-				},
-			});
+            const result = await sequelize.query(
+                `SELECT foods.id, foods.food_name, foods.price,  :backendUrl || '/' || foods.food_image_url as food_image_url, foods.restaurant_id FROM foods WHERE restaurant_id = :restaurant_id`,
+                {
+                    type : QueryTypes.SELECT,
+                    replacements : {
+                        restaurant_id,
+						backendUrl: process.env.BACKEND_URL,
+                    }
+                }
+            );
 
 			return res.status(200).json(result);
 		} catch (error) {

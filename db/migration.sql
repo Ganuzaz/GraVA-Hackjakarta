@@ -56,7 +56,7 @@ DECLARE
     restaurant_names TEXT[] := ARRAY[
         'Warung Sederhana', 'Rumah Makan Padang', 'Sate Khas Senayan', 
         'Bebek Tepi Sawah', 'Bakmi GM', 'Gado-Gado Boplo', 
-        'Soto Betawi H. Ma\'ruf', 'Ayam Goreng Suharti', 'Martabak Orins', 
+        'Soto Betawi H. Maruf', 'Ayam Goreng Suharti', 'Martabak Orins', 
         'Nasi Uduk Kebon Kacang'
     ];
     food_types TEXT[] := ARRAY[
