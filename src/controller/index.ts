@@ -30,7 +30,7 @@ export default {
 					replacements: {
 						longitude,
 						latitude,
-						backendUrl: process.env.BACKEND_URL,
+						backendUrl: process.env.BACKEND_URL?.includes('localhost') ?process.env.BACKEND_URL : `https://wsrv.nl/?url=http://${process.env.BACKEND_URL}`,
 					},
 					type: QueryTypes.SELECT,
 				}
@@ -52,8 +52,8 @@ export default {
                     type : QueryTypes.SELECT,
                     replacements : {
                         restaurant_id,
-						backendUrl: process.env.BACKEND_URL,
-                    }
+						backendUrl: process.env.BACKEND_URL?.includes('localhost') ?process.env.BACKEND_URL : `https://wsrv.nl/?url=http://${process.env.BACKEND_URL}`,
+					}
                 }
             );
 
