@@ -5,7 +5,7 @@ import { QueryTypes, Sequelize } from "sequelize";
 
 export default {
 	getRestaurants: async (req: Request, res) => {
-		const { longitude, latitude } = req.body;
+		const { longitude, latitude } = req.query;
 
 		try {
 			const result = await sequelize.query(
