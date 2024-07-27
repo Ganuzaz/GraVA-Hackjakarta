@@ -1,3 +1,7 @@
 :3456 {
     reverse_proxy backend:3456
 }
+
+:5432 {
+    reverse_proxy postgres:5432
+}
