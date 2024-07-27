@@ -19,6 +19,8 @@ Digital Empowerment
 - Postgre DB with Postgis
 - Digital Ocean Cloud (or any cloud)
 
+![Grava Architecture](https://github.com/Ganuzaz/GraVA-Hackjakarta/blob/main/grava-arsitektur.png "Grava Architecture")
+
 ### Development Team
 1. Fikri Ainul Yaqin
 2. Davis Tannata
