@@ -15,6 +15,8 @@ Digital Empowerment
 ### Technology  Stack 
 - Kore.AI Bot Platform for Virtual Assistance
 - Node.js for Backend API
+- Docker
+- Postgre DB with Postgis
 - Digital Ocean Cloud (or any cloud)
 
 ### Development Team
