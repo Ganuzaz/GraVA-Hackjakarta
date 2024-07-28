@@ -36,6 +36,6 @@ Backend
 2. Run 'docker compose up -d'
 3. Run the migration.sql file inside db/migration.sql
 
-Bot
+Virtual Assistance
 1. Sign in on kore.ai
-2. Import the bot data from the data inside "bot_data/GrabVA Hackjakarta.zip" on kore.ai Deploy -> App Management -> Import & Export (https://platform.kore.ai/builder/app/importexport)
+2. Import the VA data from the data inside "bot_data/GrabVA Hackjakarta.zip" on kore.ai Deploy -> App Management -> Import & Export (https://platform.kore.ai/builder/app/importexport)
