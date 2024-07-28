@@ -38,4 +38,4 @@ Backend
 
 Bot
 1. Sign in on kore.ai
-2. Import the bot data from bot_data folder
+2. Import the bot data from the data inside "bot_data/GrabVA Hackjakarta.zip" on kore.ai Deploy -> App Management -> Import & Export (https://platform.kore.ai/builder/app/importexport)
