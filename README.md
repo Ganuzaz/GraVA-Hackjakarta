@@ -28,7 +28,9 @@ Digital Empowerment
 4. Medisa Aris Ginanjar
 
 ### Demo Link
-You can see the demo at https://grab.dafba.com/
+You can try our demo at https://grab.dafba.com/
+or
+See our demo at https://www.youtube.com/watch?v=Bd4-gyH0gw8
 
 ### How to deploy
 Backend
