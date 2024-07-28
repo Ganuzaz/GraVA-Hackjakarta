@@ -26,3 +26,16 @@ Digital Empowerment
 2. Davis Tannata
 3. Achmad Amri
 4. Medisa Aris Ginanjar
+
+### Demo Link
+You can see the demo at https://grab.dafba.com/
+
+### How to deploy
+Backend
+1. Create .env file based on .env.template
+2. Run 'docker compose up -d'
+3. Run the migration.sql file inside db/migration.sql
+
+Bot
+1. Sign in on kore.ai
+2. Import the bot data from bot_data folder
